@@ -1,6 +1,6 @@
+import React from 'react';
+
 import ReactDOM from 'react-dom';
-import App from './routes/App';
+import App from './routes/App.js';
 
-const rooElement = document.getElementById('root');
-ReactDOM.render(<App/>, rooElement)
-
+ReactDOM.render(<App />, document.getElementById('app'));
