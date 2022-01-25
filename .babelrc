@@ -4,6 +4,6 @@
         "@babel/preset-react" // Compila JSX y React 
     ],
     "plugins": [
-        "@babel/plugin-transform-runtime"
+        //"@babel/plugin-transform-runtime"
     ]
 }
