@@ -4,15 +4,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = {
-  entry: [
-    'react-hot-loader/patch',
-    './src/index.js'
-  ],
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
-  mode: 'development',
   module: {
     rules: [
       {
@@ -28,11 +24,6 @@ const config = {
         ]
       }
     ]
-  },
-  devServer: {
-    'static': {
-      directory: './dist'
-    }
   },
   plugins: [
     new HtmlWebpackPlugin({
